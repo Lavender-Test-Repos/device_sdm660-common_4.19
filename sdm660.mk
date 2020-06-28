@@ -494,6 +494,10 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
     rild
 
+# Recorder
+PRODUCT_PACKAGES += \
+    KimciRecorder
+
 # Seccomp policy
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/seccomp/imsrtp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/imsrtp.policy
