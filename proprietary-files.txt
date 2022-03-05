@@ -437,9 +437,6 @@ vendor/lib64/hw/vulkan.adreno.so|1644b032813416f5e9a95db7ad5dc7af79381699
 vendor/lib/libtinyxml.so|b5652d2bb1d9bb7feb553cc80333ed2d5906e21e
 vendor/lib64/libtinyxml.so|65608bcb8c661761a47cfb52b822904fe1444a0d
 
-# IRQ balance - from LA.UM.8.2.1.r1-05600-sdm660
-vendor/bin/msm_irqbalance|0e967f5c7eaf8d863a50996459101be47adf96a2
-
 # Keymaster - from LA.UM.8.2.1.r1-05600-sdm660
 vendor/lib64/libkeymasterdeviceutils.so|ea44915adfee57f1bd813b2184987565d396ab82
 vendor/lib64/libkeymasterprovision.so|c4a8047563fcdefa53a3418b5916e82988426b74
@@ -504,12 +501,6 @@ vendor/lib64/vendor.xiaomi.hardware.mlipay@1.1.so|785984e3c3b30671b78624484899dd
 # MM OSAL - from LA.UM.9.11.r1-03900-NICOBAR.0
 vendor/lib/libmmosal.so|40dc5a502a63536a31083dc99776738171e07c86
 vendor/lib64/libmmosal.so|01ca88394da8db55606462494713612141880067
-
-# Perf - from LA.UM.8.6.2.r1-08600-89xx.0
-vendor/lib64/libadaptlaunch.so|cf784401fc827e5195d595a6d855ec89ea8c22bf
-vendor/lib64/libappclassifier.so|d5956c2dc9344ddcca0e78d84c393320c2e0cc97
-vendor/lib64/libgameoptfeature.so|b135489d253f0a8d7884238fe7887eb85b87745d
-vendor/lib64/liblearningmodule.so|a9390d0ef1ec82c97a61035ec686c1d094fdca98
 
 # Peripheral manager - from LA.UM.8.2.1.r1-05600-sdm660
 vendor/bin/pm-proxy|3182c937d93cc02c6721c053f57fc6794ad7edb3

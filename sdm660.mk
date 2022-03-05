@@ -64,10 +64,6 @@ PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
 endif
 
-# Adapt Launch
-PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/configs/lm/AdaptLaunchFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/AdaptLaunchFeature.xml
-
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@7.0-impl:32 \
@@ -345,6 +341,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     av \
     bt \
     overlay \
+    perf \
     telephony \
     usb \
     vibrator
@@ -381,7 +378,6 @@ PRODUCT_COPY_FILES += \
 # OMX
 PRODUCT_PACKAGES += \
     android.hardware.media.c2@1.0.vendor \
-    libavservices_minijail.vendor \
     libc2dcolorconvert \
     libhypv_intercept \
     libmm-omxcore \
@@ -440,10 +436,6 @@ PRODUCT_COPY_FILES += \
 # Inherit several Android Go Configurations(Beneficial for everyone, even on non-Go devices)
 PRODUCT_USE_PROFILE_FOR_BOOT_IMAGE := true
 PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/config/boot-image-profile.txt
-
-# Perfd (dummy)
-PRODUCT_PACKAGES += \
-    libqti-perfd-client
 
 # Preopt SystemUI
 PRODUCT_DEXPREOPT_SPEED_APPS += SystemUI
