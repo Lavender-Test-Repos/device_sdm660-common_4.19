@@ -58,9 +58,6 @@ BOARD_SUPPORTS_SOUND_TRIGGER := true
 USE_CUSTOM_AUDIO_POLICY := 1
 USE_XML_AUDIO_POLICY_CONF := 1
 
-# Battery Saver
-TARGET_POWERHAL_MODE_EXT := $(COMMON_PATH)/power-libperfmgr/power/power-mode.cpp
-
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_QCOM := true
@@ -123,10 +120,13 @@ GNSS_HIDL_VERSION := 2.1
 LOC_HIDL_VERSION := 4.0
 
 # HIDL
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(COMMON_PATH)/configs/vintf/device_framework_compatibility_matrix.xml
-DEVICE_FRAMEWORK_MANIFEST_FILE := $(COMMON_PATH)/configs/vintf/framework_manifest.xml
-DEVICE_MANIFEST_FILE := $(COMMON_PATH)/configs/vintf/manifest.xml
-DEVICE_MATRIX_FILE := $(COMMON_PATH)/configs/vintf/compatibility_matrix.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(COMMON_PATH)/configs/vintf/device_framework_compatibility_matrix.xml
+DEVICE_MANIFEST_FILE += \
+    $(COMMON_PATH)/configs/vintf/manifest.xml \
+    $(COMMON_PATH)/configs/vintf/device_manifest.xml
+
+DEVICE_MATRIX_FILE += \
+    device/qcom/common/compatibility_matrix.xml
 
 # HWUI
 HWUI_COMPILE_FOR_PERF := true
@@ -199,6 +199,9 @@ TARGET_COPY_OUT_VENDOR := vendor
 
 # Peripheral manager
 TARGET_PER_MGR_ENABLED := true
+
+# Power
+TARGET_USES_NON_LEGACY_POWERHAL := true
 
 # Properties
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
