@@ -432,11 +432,13 @@ vendor/lib/libqseed3.so|1a67e4c3e7d904dc3d3af35c0f516fe13ed88bcb
 vendor/lib/libsdm-color.so|43bfdb63147740a728e704b35c659301bca7ede2
 vendor/lib/libsdm-diag.so|a2b532158e12562e1fb74695bf829de1b94c2cde
 vendor/lib/libsdmextension.so|499d9b9be4fb53b2410f65976ea94f2c154b9f11
+vendor/lib/libtinyxml.so|16853d57ef82d59b48506857fc80b149ba3b3543
 vendor/lib/libtinyxml2_1.so|aec76b36890b163f9cf1be594d6b082887f0a9b2
 vendor/lib64/libqseed3.so|a858c83fb38ef7acd21ea0a23f36ef22ba8c06ef
 vendor/lib64/libsdm-color.so|69cea5fdff6c3ef05a17390b9031d9e0054bc2ad
 vendor/lib64/libsdm-diag.so|2ba98c20d05e34501a4423f55bec4da3f27711ad
 vendor/lib64/libsdmextension.so|2d7469450bfaadb304a8080e384f72601442d078
+vendor/lib64/libtinyxml.so|da9f11e9edc92bb6d5e8f64f4fbbaf8019b8587a
 vendor/lib64/libtinyxml2_1.so|ff32deb110acb02cb5def5f3404f9064c1276483
 
 # Graphics (Vulkan) - from S62Pro RKQ1.210406.002
