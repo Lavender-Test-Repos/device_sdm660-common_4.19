@@ -344,6 +344,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     audio \
     av \
     bt \
+    overlay \
     telephony \
     usb \
     vibrator
